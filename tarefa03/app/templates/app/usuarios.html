@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usuários</title>
+</head>
+<body>
+    <h1>Lista de Usuários</h1>
+    <ul>
+        {% for usuario in usuarios %}
+        <li>
+            <strong>Nome:</strong> {{ usuario.nome }}<br>
+            <strong>Matrícula:</strong> {{ usuario.matricula }}<br>
+            <strong>Idade:</strong> {{ usuario.idade }}<br>
+            <strong>Cidade:</strong> {{ usuario.cidade }}
+        </li>
+        <hr>
+        {% endfor %}
+    </ul>
+    <a href="/">Voltar</a>
+</body>
+</html>
